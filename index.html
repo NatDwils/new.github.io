@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navLeft">
+            <div class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+                </svg>
+            </div>
+
+            <div class="logo">E-commerce</div>
+        </div>
+        <ul class="sideNav">
+            <li class="sideNavSignIn"><img src="icons/profileImage.png" alt="profileImage" id="profileImage">
+                <p>Hello, <span id="sideNavAccountName">Sign-in</span></p>
+            </li>
+            <li class="navLinks"><a href="#">Home</a></li>
+            <li class="navLinks"><a href="#">Best Seller</a></li>
+            <li class="navLinks"><a href="#">Category</a></li>
+            <li class="navLinks"><a href="#">Used Books</a></li>
+            <li class="navLinks"><a href="#">About Us</a></li>
+            <li class="navLinks"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="searchDiv">
+            <div class="searchField">
+                <input class="searchBar" type="search" name="" id="">
+                <button class="searchBtn" type="submit"><img src="icons/search-icon.svg" alt="searchBtn"></button>
+            </div>
+        </div>
+
+        <div class="navRight">
+            <div class="accountBox">
+                <div class="user">
+                    <p>Hello,<a href="#"><span id="accountName"></span>Sign-in</span></a></p>
+                </div>
+
+                <div class="signIn">
+                    <a id="account" href="#">Account</a>
+                </div>
+            </div>
+
+
+            <div class="cartBtn">
+                <p id="cartCount">0</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <path
+                        d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.305-15l-3.432 12h-10.428l-3.777-9h-2.168l4.615 11h13.239l3.474-12h1.929l.743-2h-4.195z" />
+                </svg>
+            </div>
+        </div>
+
+
+
+    </nav>
+    
+    <div class="slide-container">
+        <div class="slide fade">
+            <img src='https://iea.imgix.net/b76ee6a7-ff18-4ee8-a557-5d4a5cbf421d/shutterstock_612227351.jpg?auto=compress%2Cformat&fit=min&q=80&rect=0%2C2105%2C4578%2C3047&w=1280&h=852&fit=crop&fm=jpg&q=70&auto=format'
+                alt=''>
+        </div>
+        <div class="slide fade">
+            <img src='https://romanelectrichome.com/wp-content/uploads/2018/06/Roman-Electrical-Wiring-Tips-What-is-Hot-Neutral-and-Ground.jpg'
+                alt=''>
+        </div>
+        <div class="slide fade">
+            <img src='https://spacecoastdaily.com/wp-content/uploads/2020/01/importance-of-electricity-600.jpg'
+                alt=''>
+        </div>
+        <div class="slide fade">
+            <img src='https://images.buildwithrise.com/image/upload/c_limit,f_auto,fl_lossy,q_auto,w_925/article_media/electricity_usage_hvwuot'
+                alt=''>
+        </div>
+
+        <a href="#" class="prev" title="Previous">&#10094</a>
+        <a href="#" class="next" title="Next">&#10095</a>
+    </div>
+    <div class="dots-container" style="opacity: 0;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="product__container">
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyoNJ-hbdaKwxUXJDbTEyGSkCUxmYWM0_Eg&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGozbz4B8qDtQswwZgQybTBaxo29Jung_zqQ&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYflvyV64xAIYDp22ejSoNk9ixbozAwBPjlA&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLRYDlXKGITJfag1egcaSEahAU5j9RezautQ&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfM93JU1R4mqQT4Bqf_5kmVb8TUy1HI_VrdA&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToGRlTHhEdzq2I_poVK8KpbdIWprQSL45ZBA&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLLpgdD5BHwYhnmZ1hJB9tKs2ICl8jrCqGHQ&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgqpdjSU7kt4EmRzQh0K9ZCdLeFOu981zwuQ&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROLUO1KPFNEc1lXMuJ0Z0D9Ek6cECpLu5HPA&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQweB9k0wsNFlvjpWFj8Q0trTaeiS3DuR4Eog&usqp=CAU" alt="">
+            <h4>Product name: 25$</h4>
+
+            <button>Buy Now</button>
+            <button class="cart__btn">Add to cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        E-commerce website Copyright © 2021  - All rights reserved
+        </div>
+        </div>
+        </footer>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
